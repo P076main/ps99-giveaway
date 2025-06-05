@@ -4,22 +4,155 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PS99 Roblox Giveaway</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* jouw hele CSS hier... (precies zoals je hierboven had) */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    body, html {
+      margin: 0; padding: 0; height: 100%;
+      background: linear-gradient(135deg, #6a1b9a, #9c27b0);
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 30px 20px;
+    }
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    h1 {
+      font-size: 3.8rem;
+      margin: 0;
+      text-align: center;
+      text-shadow: 0 0 15px #d39ce7aa, 0 0 40px #9c27b0cc;
+      letter-spacing: 2px;
+    }
+    .subtext {
+      font-size: 1.4rem;
+      text-align: center;
+      color: #d1c4e9cc;
+    }
+    .join-box {
+      background: rgba(255 255 255 / 0.1);
+      border-radius: 20px;
+      padding: 30px 40px;
+      max-width: 700px;
+      margin: 0 auto;
+      box-shadow: 0 0 25px #9c27b0cc;
+      text-align: center;
+    }
+    .join-box p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: #e0c3fccc;
+    }
+    .join-btn {
+      background: linear-gradient(45deg, #9c27b0, #6a1b9a);
+      border: none;
+      padding: 20px 60px;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: white;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow:
+        0 0 10px #9c27b0,
+        0 0 30px #d39ce7e0,
+        0 0 50px #d39ce7cc;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      user-select: none;
+      display: inline-block;
+    }
+    .join-btn:hover {
+      box-shadow:
+        0 0 15px #9c27b0ff,
+        0 0 40px #d39ce7ff,
+        0 0 70px #d39ce7ff,
+        0 0 100px #9c27b0ff;
+      transform: scale(1.07);
+      background: linear-gradient(45deg, #b14fd6, #7e2ab1);
+      color: #fff;
+    }
+    .prizes {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .prize-1 {
+      background: rgba(255 255 255 / 0.1);
+      padding: 40px 50px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #9c27b0cc;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #d1c4e9;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    .prize-1:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 50px #d39ce7ff;
+    }
+    .prizes-sub {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .prize-sub {
+      background: rgba(255 255 255 / 0.1);
+      flex: 1 1 300px;
+      padding: 25px 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #9c27b0cc;
+      text-align: center;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    .prize-sub:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 30px #d39ce7ff;
+    }
+    .prize h3 {
+      font-size: 1.7rem;
+      margin-bottom: 12px;
+      color: #d1c4e9;
+    }
+    .prize p {
+      font-size: 1.2rem;
+      color: #e0c3fccc;
+      margin: 0;
+    }
+    @media (max-width: 720px) {
+      h1 {
+        font-size: 3rem;
+      }
+      .join-btn {
+        font-size: 1.5rem;
+        padding: 16px 45px;
+      }
+      .prizes-sub {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>PS99 Giveaway</h1>
     <p class="subtext"><strong>1500 Followers</strong><br />Giveaway starts when we reach</p>
-
     <div class="join-box">
       <p><strong>Join our Roblox group to participate</strong><br />
       Click the button below to join our Roblox group and automatically enter the giveaway!</p>
       <a href="https://roblox.ls/communities/3585438292/" target="_blank" rel="noopener" class="join-btn">Join Roblox Group</a>
     </div>
-
     <div class="prizes">
       <div class="prize-1 prize">
         <h3>🥇 1st Prize</h3>
