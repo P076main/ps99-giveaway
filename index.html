@@ -8,8 +8,10 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
     body, html {
-      margin: 0; padding: 0; height: 100%;
-      background: linear-gradient(135deg, #6a1b9a, #9c27b0);
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #6a1b9a; /* Vaste paarse achtergrond */
       font-family: 'Montserrat', sans-serif;
       color: #fff;
       display: flex;
@@ -39,8 +41,9 @@
       color: #d1c4e9cc;
     }
 
+    .add-box,
     .join-box {
-      background: rgba(255 255 255 / 0.1);
+      background: #6a1b9a; /* Geen transparantie meer */
       border-radius: 20px;
       padding: 30px 40px;
       max-width: 700px;
@@ -49,13 +52,15 @@
       text-align: center;
     }
 
+    .add-box p,
     .join-box p {
       font-size: 1.3rem;
       margin-bottom: 20px;
       color: #e0c3fccc;
     }
 
-    .join-btn {
+    .join-btn,
+    .extra-btn {
       background: linear-gradient(45deg, #9c27b0, #6a1b9a);
       border: none;
       padding: 20px 60px;
@@ -72,9 +77,11 @@
       text-decoration: none;
       user-select: none;
       display: inline-block;
+      margin-bottom: 20px;
     }
 
-    .join-btn:hover {
+    .join-btn:hover,
+    .extra-btn:hover {
       box-shadow:
         0 0 15px #9c27b0ff,
         0 0 40px #d39ce7ff,
@@ -94,7 +101,7 @@
     }
 
     .prize-1 {
-      background: rgba(255 255 255 / 0.1);
+      background: #6a1b9a;
       padding: 40px 50px;
       border-radius: 20px;
       box-shadow: 0 0 30px #9c27b0cc;
@@ -119,7 +126,7 @@
     }
 
     .prize-sub {
-      background: rgba(255 255 255 / 0.1);
+      background: #6a1b9a;
       flex: 1 1 300px;
       padding: 25px 30px;
       border-radius: 15px;
@@ -150,7 +157,8 @@
       h1 {
         font-size: 3rem;
       }
-      .join-btn {
+      .join-btn,
+      .extra-btn {
         font-size: 1.5rem;
         padding: 16px 45px;
       }
@@ -167,6 +175,11 @@
     <h1>PS99 Giveaway</h1>
 
     <p class="subtext"><strong>1500 Followers</strong><br />Giveaway starts when we reach</p>
+
+    <div class="add-box">
+      <p><strong>Add me so we can play together!</strong></p>
+      <a href="https://www.roblox.com/users/12345678/profile" target="_blank" rel="noopener" class="join-btn">Add Me!</a>
+    </div>
 
     <div class="join-box">
       <p><strong>Join our Roblox group to participate</strong><br />
